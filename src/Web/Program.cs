@@ -45,6 +45,10 @@ app.UseExceptionHandler(options => { });
 
 app.MapEndpoints();
 
+
+
+
+
 app.Run();
 
 public partial class Program { }

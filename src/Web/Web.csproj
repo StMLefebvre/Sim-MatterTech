@@ -3,8 +3,8 @@
   <PropertyGroup>
     <SpaRoot>ClientApp\</SpaRoot>
     
-    <!--<SpaProxyServerUrl>https://localhost:44447</SpaProxyServerUrl>
-    <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>-->
+    <SpaProxyServerUrl>https://localhost:44447</SpaProxyServerUrl>
+    <!--<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>-->
     
     <RootNamespace>MatterTech.Web</RootNamespace>
     <AssemblyName>MatterTech.Web</AssemblyName>
