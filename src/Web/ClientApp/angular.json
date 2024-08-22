@@ -37,7 +37,7 @@
             "styles": [
               "src/styles.scss",
               "src/css/style.css",
-              "src/bootstrap.min.css"
+              "src/css/bootstrap.min.css"
 
             ],
             "scripts": ["src/script/stocker.js"]
@@ -111,7 +111,7 @@
             "styles": [
               "src/styles.scss",
               "src/css/style.css",
-              "src/bootstrap.min.css"
+              "src/css/bootstrap.min.css"
             ],
             "scripts": ["src/script/stocker.js"]
           }
