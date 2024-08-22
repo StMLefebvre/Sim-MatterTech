@@ -27,12 +27,20 @@
               "oidc-client"
             ],
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/lib"  ,
+              "src/script",
+              "src/img",
+              "src/css"
+
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/css/style.css",
+              "src/bootstrap.min.css"
+
             ],
-            "scripts": []
+            "scripts": ["src/script/stocker.js"]
           },
           "configurations": {
             "production": {
@@ -94,12 +102,18 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/lib"  ,
+              "src/script",
+              "src/img",
+              "src/css"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/css/style.css",
+              "src/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["src/script/stocker.js"]
           }
         },
         "server": {
