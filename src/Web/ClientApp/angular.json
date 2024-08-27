@@ -40,7 +40,7 @@
               "src/css/bootstrap.min.css"
 
             ],
-            "scripts": ["src/script/stocker.js"]
+            "scripts": ["src/script/stocker.js","src/"]
           },
           "configurations": {
             "production": {

@@ -3,6 +3,8 @@
 /* Provide sufficient contrast against white background */
 
 
+
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -69,6 +71,21 @@
   justify-content: center;
   font-weight: normal;
 }
+
+
+.btn-icon {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust width to match your button size */
+  height: 40px; /* Adjust height to match your button size */
+  background-color: #00d394 !important; /* Match the green background color */
+}
+
+.btn-icon i {
+  font-size: 20px; /* Adjust icon size */
+}
+
 
 .btn.btn-primary {
   color: var(--bs-white);
@@ -154,6 +171,7 @@
 .navbar-light .navbar-brand img {
   max-height: 60px;
   transition: .5s;
+  //background-image: "src/img/carousel-1.jpg";
 }
 
 .sticky-top.navbar-light .navbar-brand img {
