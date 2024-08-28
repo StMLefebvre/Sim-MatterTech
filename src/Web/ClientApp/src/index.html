@@ -28,7 +28,10 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-    </head>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
     <body>
 <div class="frontpage"  *ngIf="AppService.getValue()">
@@ -185,16 +188,16 @@
           <div class="row g-5 align-items-center">
               <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                   <div>
-                      <h4 class="text-primary">About Us</h4>
-                      <h1 class="display-5 mb-4">Meet our company unless miss the opportunity</h1>
-                      <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum velit temporibus repudiandae ipsa, eaque perspiciatis cumque incidunt tenetur sequi reiciendis.
+                      <h4 class="text-primary" id="AboutUsTitle">About Us</h4>
+                      <h1 class="display-5 mb-4" id="AboutUsCaption">Meet our company unless miss the opportunity</h1>
+                      <p class="mb-4" id="AboutUsContent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum velit temporibus repudiandae ipsa, eaque perspiciatis cumque incidunt tenetur sequi reiciendis.
                       </p>
                       <div class="row g-4">
                           <div class="col-md-6 col-lg-6 col-xl-6">
                               <div class="d-flex">
                                   <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
                                   <div class="ms-4">
-                                      <h4>Business Consuluting</h4>
+                                      <h4>Business Consulting</h4>
                                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                   </div>
                               </div>

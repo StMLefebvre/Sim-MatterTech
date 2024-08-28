@@ -7,7 +7,7 @@ import { AppService } from 'src/service/app-service.service';
 })
 export class AppComponent {
   title = 'app';
-  //static IsIndex:boolean = true;
+  //static IsIndex:boolean = true;  
 
   constructor(public toggleService: AppService) {}
   get isIndex(): boolean {

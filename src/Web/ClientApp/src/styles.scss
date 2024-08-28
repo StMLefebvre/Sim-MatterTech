@@ -944,3 +944,29 @@
 
 /* Importing Bootstrap Icons SCSS file. */
 @import "node_modules/bootstrap-icons/font/bootstrap-icons";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~quill/dist/quill.snow.css';
+.edit-icon {
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #888;
+}
+
+.edit-icon:hover {
+  color: #333;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+  background-color: mediumseagreen;
+}
+  
+
+

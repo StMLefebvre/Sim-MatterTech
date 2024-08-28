@@ -35,12 +35,12 @@
 
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss",
               "src/css/style.css",
               "src/css/bootstrap.min.css"
-
             ],
-            "scripts": ["src/script/stocker.js","src/"]
+            "scripts": ["src/script/stocker.js"]
           },
           "configurations": {
             "production": {
@@ -109,6 +109,7 @@
               "src/css"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss",
               "src/css/style.css",
               "src/css/bootstrap.min.css"

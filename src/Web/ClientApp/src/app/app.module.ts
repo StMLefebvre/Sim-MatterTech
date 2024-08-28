@@ -14,6 +14,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { TodoComponent } from './todo/todo.component';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { QuillModule } from 'ngx-quill';
+import { QuillEditorDialogComponent } from './home/quill-editor-dialog/quill-editor-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    TodoComponent
+    TodoComponent,
+    QuillEditorDialogComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
+    MatDialogModule,
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -35,11 +40,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'todo', component: TodoComponent }
     ]),
     BrowserAnimationsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    QuillModule.forRoot() // Import QuillModule and configure it
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [QuillEditorDialogComponent] // Declare the dialog component
 })
 export class AppModule { }
