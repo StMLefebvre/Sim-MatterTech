@@ -11,6 +11,6 @@ export class AppComponent {
 
   constructor(public toggleService: AppService) {}
   get isIndex(): boolean {
-    return AppService.getValue();
+    return this.toggleService.getValue();
   }
 }
