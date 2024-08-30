@@ -46,6 +46,39 @@ app.UseExceptionHandler(options => { });
 app.MapEndpoints();
 
 
+// Load endpoint
+app.MapGet("/api/IndexHtml/load", async () =>
+{
+    var filePath = "wwwroot/assets/indexHtmlModel.json";
+    if (!File.Exists(filePath))
+    {
+        return Results.NotFound();
+    }
+
+    var json = await File.ReadAllTextAsync(filePath);
+    return Results.Content(json, "application/json");
+});
+
+// Save endpoint
+app.MapPost("/api/IndexHtml/save", async (HttpRequest request) =>
+{
+    var filePath = "wwwroot/assets/indexHtmlModel.json";
+    using var reader = new StreamReader(request.Body);
+    var json = await reader.ReadToEndAsync();
+
+    try
+    {
+        await File.WriteAllTextAsync(filePath, json);
+        return Results.Ok();
+    }
+    catch
+    {
+        return Results.BadRequest("Error saving file.");
+    }
+});
+
+
+
 
 
 
