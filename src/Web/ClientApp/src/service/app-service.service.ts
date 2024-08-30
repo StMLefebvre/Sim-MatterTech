@@ -15,7 +15,14 @@ export class AppService {
   private renderer: Renderer2;
 
   // Simulated user roles, adjust as needed
-  private userRoles: string[] = ['Administrator', 'User']; // Example roles
+  private  _userRoles: string[] = []; // Example roles
+  public  get userRoles(): string[] {
+    return this._userRoles;
+  }
+  public  set userRoles(value: string[]) {
+    this._userRoles = value;
+    this.updateDOM();
+  }
 
   constructor(
     private http: HttpClient,
@@ -28,7 +35,7 @@ export class AppService {
 
   toggle(isHide: boolean): void {
     AppService.isIndexSubject.next(isHide);
-    this.updateDOM();
+   
   }
 
   private updateDOM(): void {
@@ -82,7 +89,8 @@ export class AppService {
   }
 
   private isUserAdmin(): boolean {
-    return this.userRoles.includes('Administrator');
+    let result = this.userRoles.includes('Administrator');
+    return result;
   }
 
   private loadModel(): void {

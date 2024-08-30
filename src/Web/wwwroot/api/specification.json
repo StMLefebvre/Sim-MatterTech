@@ -26,6 +26,19 @@
         }
       }
     },
+    "/api/HomeIndex": {
+      "get": {
+        "tags": [
+          "HomeIndex"
+        ],
+        "operationId": "GetIndex",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/api/TodoItems": {
       "get": {
         "tags": [
