@@ -6,6 +6,26 @@
     "version": "1.0.0"
   },
   "paths": {
+    "/api/IndexHtml/load": {
+      "get": {
+        "operationId": "GetApiIndexHtmlLoad",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/IndexHtml/save": {
+      "post": {
+        "operationId": "PostApiIndexHtmlSave",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/api/TodoItems": {
       "get": {
         "tags": [

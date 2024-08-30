@@ -43,6 +43,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="wwwroot\assets\indexHtmlModel.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="app.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
