@@ -27,6 +27,7 @@
       <Publish>false</Publish>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" />
     <PackageReference Include="NSwag.AspNetCore" />
     <PackageReference Include="NSwag.MSBuild">
       <PrivateAssets>all</PrivateAssets>
