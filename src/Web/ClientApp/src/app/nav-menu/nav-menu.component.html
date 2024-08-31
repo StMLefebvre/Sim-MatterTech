@@ -30,7 +30,7 @@
 
  <!-- Navbar & Hero Start -->
  <div class="container-fluid position-relative p-0">
-  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" style="background-color: #e3f2fd;">
       <a href="" class="navbar-brand p-0">
           <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Estate Finder</h1>
           <!-- <img src="img/logo.png" alt="Logo"> -->
@@ -39,8 +39,14 @@
           <span class="fa fa-bars"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="input-group m-3 ">
+            <input type="text" class="form-control" placeholder="enter zip code or city" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text btn btn-primary" id="searchBtn">Search</span>
+          </div>
           <div class="navbar-nav ms-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home alone</a>
+
+          
+              <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
               <a href="blog.html" class="nav-item nav-link">Blogs</a>
@@ -57,7 +63,7 @@
               <a href="404.html" class="dropdown-item">404 Page</a>
           </div>
       </div> -->
-              <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+              <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
           </div>
           <a href="/Identity/Account/Manage" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0" 
           (click)="hideFrontPage()">
